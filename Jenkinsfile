@@ -25,7 +25,7 @@ pipeline {
                     echo "S3 Upload complete"
                     bat 'aws s3 ls s3://bhabani-1997-bhera'
                     echo "Invalidating cloudfrond distribution to get fresh cache"
-                    bat 'aws cloudfront create-invalidation --distribution-id=E3BWCA338M4V51 --paths / --profile=myawsprofile'
+                    //bat 'aws cloudfront create-invalidation --distribution-id=E3BWCA338M4V51 --paths / --profile=myawsprofile'
                     echo "Deployment complete" 
             }
    }
