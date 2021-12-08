@@ -1,14 +1,14 @@
 pipeline {
   agent any
  stages {
-  /*stage('Build') {
+  stage('Build') {
             steps {
                 echo "Building ..."
                 bat 'npm install'
                 bat 'npm run build'
                 echo "Build Successful"
             }
-        } */
+        } 
    stage('Deploy') {
             steps {
                 echo 'Deploying....'
