@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 withCredentials([[ $class: 'AmazonWebServicesCredentialsBinding',
-                                    credentialsId: "harsh-aws-creds",
+                                    credentialsId: "aws-new-creds",
                                     //accessKeyVariable: 'AWS_ACCESS_KEY_ID',
                                     //secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
                                     ]]) {}
